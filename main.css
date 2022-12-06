@@ -6,7 +6,7 @@ html,body{margin:0;padding:0}
 body{font: 76% font-family: 'Bitter', serif; font-family: 'Mulish', sans-serif;}
 body{
     background-image: url(2.jpg); 
-	background-repeat: no-repeat;	
+	background-repeat: repeat-y;	
 	background-size: 100%;
 }
 p{margin:5px 5px 10px 10px}

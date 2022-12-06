@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&family=Mulish:ital,wght@1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&family=Mulish:ital,wght@1,900;1,1000&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+html,body{margin:0;padding:0}
+body{font: 76% font-family: 'Bitter', serif; font-family: 'Mulish', sans-serif;}
+body{
+    background-image: url(2.jpg); 
+	background-repeat: no-repeat;	
+	background-size: 100%;
+}
+p{margin:5px 5px 10px 10px}
+a{display:block;color: #981793;padding:10px}
+div#header h1{height:80px;line-height:80px;margin:0;
+  padding-left:10px;background-image: url(1.jpg);color:#000000;text-shadow: #b3b3b3 1px 0 10px; font-family: 'Rampart One', cursive;}
+div#content p{line-height:1.4; font-size: 30pt; font-family: 'Caveat', cursive; color:#00008b;text-shadow: white 1px 0 10px;}
+div#navigation{background:#cccccc}
+div#extra{background:#cccccc}
+div#footer{background: #333;color: #FFF}
+div#footer p{margin:0;padding:5px 10px}
+div#wrapper{float:right;width:100%;margin-left:-200px}
+div#content{margin-left:200px}
+div#navigation{float:left;width:200px}
+div#extra{float:left;clear:left;width:200px}
+div#footer{font-style:italic;width:100%;position:absolute;bottom: 0;left: 0;}
+
+ul.menu {
+	margin: 0;
+	padding: 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	display: inline-block;
+	background-color: #cccccc;
+	width: 190px;
+}
+
+ul.menu li {
+	list-style: none;
+	position: relative;
+}
+
+ul.menu li a {
+	padding: 10px 12px 12px;
+	color: black;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Arial;
+	text-decoration: none;
+	display: block;
+	border-top: 1px solid #b3b3b3;
+}
+
+ul.menu li a:hover {
+	background-color: white;
+}
+
+ul.menu li:first-child a {
+	border-top: none;
+}
+
+ul.menu li:first-child a:hover {
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+}
+
+ul.menu li:last-child a:hover {
+	border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+}
+
+ul.menu li ul {
+	display: none;
+}
+
+ul.menu li:hover ul {
+	display: block;
+	position: absolute;
+	left: 190px;
+	top: 1px;
+	background-color: #b3b3b3;
+	width: 150px;
+	z-index: 1000;
+	border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+}
+
+ul.menu li:hover ul li:first-child a:hover {
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+
+ul.menu li:hover ul li:last-child a:hover {
+	border-radius: 0 0 5px 0;
+	-webkit-border-radius: 0 0 5px 0;
+	-moz-border-radius: 0 0 5px 0;
+}
+
+var myVar = setInterval(function() {
+  myTimer();
+}, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+}

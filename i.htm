@@ -1,0 +1,74 @@
+<html>
+<head>
+<link rel="stylesheet" href="other.css" type="text/css"/>
+<title>Химия для самых юных</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">        
+<script src="jas1.js"></script>                         
+</head>
+<body>
+
+<div id="container">
+<div id="header"><h1 align="center"><i><big> Викт орина </big></i></h1></div>
+<div id="wrapper">
+<div id="content">
+
+<p><mark>Мы приготовили для вас небольшой тест, который проверит вас на знание кошек! Надеемся, вам он покажется интересным!</mark></p>
+
+<form name="quiz">
+<ol>
+<script>
+for(var q=0; q<questions.length; ++q) {
+   var question = questions[q];
+   var idx = 1 + q;
+
+   document.writeln('<li><span class="quest">' + question.text + '</span><br/>');
+   for(var i in question.answers) {
+	document.writeln('<input type=radio name="q' + idx + '" value="' + i +
+	'" onClick="Engine(' + q + ', this.value)">' + question.answers[i] + '<br/>');
+}
+}
+</script>
+</ol>
+<center><input type="button" onClick="Score()" value="Проверить результаты теста" /></center>
+
+</form>
+</p>
+
+</div>
+</div>
+
+
+
+
+<div id="navigation"><p>
+<big><strong>Навигация по сайту</strong></big>
+<ul class="menu">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="s.htm">Статьи</a>
+				<ul>
+					<li><a href="s1.htm">Зачем детям нужна химия?</a></li>
+					<li><a href="s2.htm">Почему кошки - это хорошо</a></li>
+					
+				</ul>
+			</li>
+			<li><a href="i.htm">Викторина</a></li>
+			<li><a href="k.htm">Это интересно!</a></li>
+			<li><a href="ist.htm">Полезные источники</a></li>
+			<li><a href="https://mchildren.ru/nauka-i-opyty-dlya-detej-chto-takoe-himicheskie-reaktsii" target="_blank">Кратко о главном</a></li>
+		</ul>
+</p>
+</div>
+
+
+
+
+
+<div id="extra">
+<p><strong>Батырева Софья НХМбд-01-22</strong></p>
+<p id="clock"></p>
+</div>
+
+
+
+</body>
+</html>

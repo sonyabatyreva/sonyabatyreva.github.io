@@ -6,7 +6,7 @@ html,body{margin:0;padding:0}
 body{font: 76% font-family: 'Bitter', serif; font-family: 'Mulish', sans-serif;}
 body{
     background-image: url(2.jpg); 
-	background-repeat: no-repeat;	
+	background-repeat: repeat-y;	
 	background-size: 100%;
 }
 p{margin:5px 5px 10px 10px}
@@ -16,8 +16,6 @@ div#header h1{height:80px;line-height:80px;margin:0;
 div#content p{line-height:1.4; font-size: 30pt; font-family: 'Caveat', cursive; color:#00008b;text-shadow: white 1px 0 10px;}
 div#navigation{background:#cccccc}
 div#extra{background:#cccccc}
-div#footer{background: #333;color: #FFF}
-div#footer p{margin:0;padding:5px 10px}
 div#wrapper{float:right;width:100%;margin-left:-200px}
 div#content{margin-left:200px}
 div#navigation{float:left;width:200px}
